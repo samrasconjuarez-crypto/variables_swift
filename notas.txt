@@ -1,0 +1,105 @@
+import Foundation
+ 
+let hello = "Hello, world!"
+ 
+//let se utiliza para indicar constantes
+//var se utiliza para indicar variables
+ 
+/*
+var nombre = "cosas" // es de tipo implicito
+var nombre_2: String = "Petra" // explicito que es string
+//var edad: Int? = nil //El simbolo de pregunta encapsula nuestro "gato de schrodinger", para ver si el dato existe. nil es lo mismo que null, pero mas de chavas cool
+var edad_validad: Int = edad! //el simbolo de exclamacion define si existe lo que se esta buscando (en este caso)
+var Saludar_a: String = "Buenos dias \(nombre ?? "Fulanito")"
+*/
+ 
+/*
+ var edad: Int = 10
+let mayoria_de_edad = 18.8
+ 
+var nombre: String? = nil
+ 
+print ("El tipo de dato de mayoria_de_edad es \(type (of: mayoria_de_edad))")
+print ("El tipo de dato de edad es \(type (of: edad))")
+ 
+ 
+var precio = 10.50
+var ciudad: String = "Roma"
+ 
+ 
+print ("El tipo de dato de ciudad es \(type (of: ciudad))")
+print ("El tipo de dato de precio es \(type (of: precio))")
+ */
+ 
+ 
+ 
+ /*
+ Explícito, Tú le dices al compilador el tipo de dato
+ (por ejemplo: String, Int, Double, Bool).
+implícito: El compilador adivina el tipo de dato
+ según el valor que le das. No se necesita escribir el tipo.
+*/
+ 
+ 
+ 
+ 
+// Variables explicitaS (Yo indicao el tipo)
+ 
+var nombre: String = "Chilindrina"       // es un String
+var edad: Int = 25                  // un número entero
+var altura: Double = 1.75           //  número con decimales
+var esEstudiante: Bool = true       // esto es verdadero o falso
+var inicial: Character = "C"        // esto es un caracter unico
+ 
+ 
+// Variables implicitas (la compu adivina el tipo)
+ 
+var ciudad = "Roma"                // Como pusimos texto, sabe que es String
+var precio = 10.50                 // Como hay decimales,  es Double
+var cantidad = 100                 // número entero, es Int
+var activo = false                 // Como es falso, indica un verdadero, por lo tanto booleano
+var letra = "A"                    // Swift lo interpreta como String (no Character)
+ 
+ 
+ 
+// Constantes explicitas (yo indico el tipo y NO cambian. Se declaran con Let como de "dejala que sea constante". Si la vuelves a escribir debe de ser el mismo valor, si no, al programa le da amsiedad y se muere)
+ 
+let pi: Double = 3.1416            // Número con decimales
+let saludo: String = "Hola mundo"  // Texto fijo
+let maxUsuarios: Int = 1000        // Número entero fijo
+let esValido: Bool = true          // Verdadero o falso fijo
+let simbolo: Character = "♥"       // Carácter único
+ 
+ 
+ 
+//constantes implicitas (la maquina adivina el tipo y no se pueden cambiar)
+ 
+let pais = "México"                // Texto, es String
+let temperatura = 22.5             // Número con decimales, es Double
+let diasSemana = 7                 // Número entero, es Int
+let esMayorEdad = false            // Verdadero/falso, es Bool
+let mensaje = "Bienvenido"         // Texto, es String
+ 
+ 
+ 
+print("Tipo de 'nombre' (explícito) es \(type(of: nombre))")
+print("Tipo de 'edad' (explícito) es \(type(of: edad))")
+print("Tipo de 'altura' (explícito) es \(type(of: altura))")
+print("Tipo de 'esEstudiante' (implícito) es \(type(of: esEstudiante))")
+print("Tipo de 'inicial' (explícito) es \(type(of: inicial))")
+print("Tipo de 'ciudad' (implícito) es \(type(of: ciudad))")
+print("Tipo de 'precio' (implícito) es \(type(of: precio))")
+print("Tipo de 'temperatura' (implícito) es \(type(of: temperatura))")
+print("Tipo de 'cantidad' (implícito) es \(type(of: cantidad))")
+print("Tipo de 'activo' (implícito) es \(type(of: activo))")
+print("Tipo de 'letra' (explícito) es \(type(of: letra))")
+print("Tipo de 'pi' (explícito) es \(type(of: pi))")
+print("Tipo de 'maxUsuarios' (explícito) es \(type(of: maxUsuarios))")
+print("Tipo de 'esValido' (explícito) es \(type(of: esValido))")
+print("Tipo de 'simbolo' (explícito) es \(type(of: simbolo))")
+print("Tipo de 'pais' (explícito) es \(type(of: pais))")
+print("Tipo de 'temperatura' (explícito) es \(type(of: temperatura))")
+print("Tipo de 'diasSemana' (explícito) es \(type(of: diasSemana))")
+print("Tipo de 'esMayorEdad' (explícito) es \(type(of: esMayorEdad))")
+print("Tipo de 'mensaje' (explícito) es \(type(of: mensaje))")
+ 
